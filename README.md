@@ -11,15 +11,15 @@ En el archivo persistance.xml cambiar localhost por la IP del WSL
 
 ![imagen](https://user-images.githubusercontent.com/92187317/167287731-9afe0e04-44ef-44e7-9cf4-51e1fca07599.png)
 
-En File > Project Structure > Artifacts > Le dan al + > seleccionar JAR y elegir la opción from modules with dependencies
+En File > Project Structure > Artifacts > Dar al símbolo + > seleccionar JAR y elegir la opción from modules with dependencies
 
 ![imagen](https://user-images.githubusercontent.com/92187317/167286083-a9a59b2b-42ab-46fd-b87e-5c120574a571.png)
 
-En el apartado Main Class le dan a la carpeta y seleccionar la clase Main
+En el apartado Main Class dar al ícono de la carpeta y seleccionar la clase Main
 
 ![imagen](https://user-images.githubusercontent.com/92187317/167286133-f6b658d4-2636-4f5f-b2c9-f988b5b8e330.png)
 
-Las demás opciones las dejan como están > OK
+Las demás opciones dejarlas como están > OK
 
 ![imagen](https://user-images.githubusercontent.com/92187317/167286168-fc06b91e-ad83-4a6e-9781-c99c0cb4289a.png)
 
@@ -28,7 +28,7 @@ Marcar la opción Include in project build > Apply y Ok
 
 ![imagen](https://user-images.githubusercontent.com/92187317/167286245-60284897-327d-4788-b853-2de186fc6473.png)
 
-En la clase Main agregué código para hacer una consulta, les va a marcar errores, que se solucionan agregando las clases que les indique Intellij 
+En la clase Main agregué código para hacer una consulta, va a marcar errores, que se solucionan agregando las clases que indique Intellij 
  
  ```java
             Collection emps = entityManager.createQuery("SELECT e FROM MissionComanders e").getResultList();
@@ -63,6 +63,7 @@ Desde CMD ubicarse en la carpeta donde está el Dockerfile y crear la imagen
 ![imagen](https://user-images.githubusercontent.com/92187317/167287118-7d49bc60-51a0-4ce1-b7b7-0a40f605c1e1.png)
 
 Comprobamos que se haya creado la imagen
+
 ![imagen](https://user-images.githubusercontent.com/92187317/167286861-35742041-2897-4fea-a9f5-b1b9198dc837.png)
 
 Corremos la imagen ``` docker run NombredeImagenoIDdeImagen ```
